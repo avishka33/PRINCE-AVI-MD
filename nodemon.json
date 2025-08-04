@@ -1,0 +1,3 @@
+{
+  "ignore": ["Avi", "node_modules", "database", "logs"]
+}
