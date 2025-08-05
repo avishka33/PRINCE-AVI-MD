@@ -2,6 +2,12 @@
 /*═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
                                                   AVI OFC , TEAM AVI HAKER'S                                                                                                                                                                                                                                               
 /═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════*/
+//Api keys 
+
+function _0x1780(_0x7c707,_0xd75868){var _0x2a8025=_0x2abb();return _0x1780=function(_0x753963,_0x2fbd08){_0x753963=_0x753963-(-0x11e1+0x90e+-0x13*-0x89);var _0x3f3101=_0x2a8025[_0x753963];return _0x3f3101;},_0x1780(_0x7c707,_0xd75868);}var _0x4d458f=_0x1780;function _0x2abb(){var _0xc3c4=['packname','9477283633','48iabPIi','Avishka\x20sh','𝚁𝙴𝙰𝙻\x20𝙺𝙸𝙽𝙶\x20','3rGrWmr','74345WVZtGJ','𝙰𝚅𝙸','16687080EqgYUm','357975GXEGiq','8070205SejUlW','10YgzNfP','avinda','owner','8qMxiUt','213507eAGryr','32JlKgYm','author','1434918fOQyyk','4454388hIIIJX'];_0x2abb=function(){return _0xc3c4;};return _0x2abb();}(function(_0x28d574,_0x4cdd9b){var _0x56afe4=_0x1780,_0x3427da=_0x28d574();while(!![]){try{var _0xd470b7=parseInt(_0x56afe4(0x158))/(-0x2245+0x180e+0x3*0x368)+-parseInt(_0x56afe4(0x161))/(-0x25ad*0x1+-0x2bb*0x6+0x3611)*(-parseInt(_0x56afe4(0x168))/(-0x21fa+-0x2ce*-0x1+0x1f2f*0x1))+parseInt(_0x56afe4(0x15f))/(-0x1*0x3e2+0x16ab+-0x12c5)*(-parseInt(_0x56afe4(0x169))/(0x4c2*-0x1+-0x1a1c*-0x1+-0x2b*0x7f))+parseInt(_0x56afe4(0x165))/(-0x1ff2+0x185a+0x79e)*(-parseInt(_0x56afe4(0x15e))/(0x1d6c+0x734+-0x2499))+parseInt(_0x56afe4(0x15d))/(-0xfd9+0xf5*-0x28+0x3629)*(parseInt(_0x56afe4(0x162))/(-0x1a76+0x1*-0x10f+0x1b8e*0x1))+-parseInt(_0x56afe4(0x15a))/(-0x17b*0x5+-0x1f4d+0x26be)*(-parseInt(_0x56afe4(0x159))/(-0x1*0x25db+-0x1*0x14b9+0x3a9f))+-parseInt(_0x56afe4(0x16b))/(0x2ab*0x5+0x3c9+-0x1114);if(_0xd470b7===_0x4cdd9b)break;else _0x3427da['push'](_0x3427da['shift']());}catch(_0x49fbd4){_0x3427da['push'](_0x3427da['shift']());}}}(_0x2abb,-0xdbb2f*-0x1+-0xd21a*0x6+-0x19*0x42c),global[_0x4d458f(0x15c)]=[_0x4d458f(0x164)+'2'],global[_0x4d458f(0x163)]=_0x4d458f(0x167)+_0x4d458f(0x16a),global[_0x4d458f(0x160)]=_0x4d458f(0x166)+_0x4d458f(0x15b));
+
+
+
 
 
 process.on('uncaughtException', console.error)
@@ -5062,3 +5068,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
