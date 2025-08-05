@@ -3,11 +3,9 @@ const chalk = require('chalk');
 
 
 
-//~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
+//~~~~~~~~~~~~< SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ['94772836332'] 
-global.packname = '𝚁𝙴𝙰𝙻 𝙺𝙸𝙽𝙶 𝙰𝚅𝙸'
-global.author = 'Avishka shavinda'
+
 global.botname = 'Avi'
 global.listprefix = ['+','!','.']
 global.listv = ['✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
@@ -78,3 +76,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
