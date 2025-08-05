@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const { spawn } = require('child_process');
 
 function start() {
-	let args = [path.join(__dirname, 'index.js'), ...process.argv.slice(2)]
+	let args = [path.join(__dirname, 'main.js'), ...process.argv.slice(2)]
 	let p = spawn(process.argv[0], args, {
 		stdio: ['inherit', 'inherit', 'inherit', 'ipc']
 	}).on('message', data => {
@@ -25,4 +25,5 @@ function start() {
 		}
 	})
 }
+
 start()
