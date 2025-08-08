@@ -6,8 +6,8 @@ const chalk = require('chalk');
 //~~~~~~~~~~~~< SETTINGS >~~~~~~~~~~~~\\
 
 
-global.botname = 'Avi'
-global.listprefix = ['+','!','.']
+global.botname = 'Avi' //මෙතන්ට ඔයාගෙ බොට්ගෙ නම දාන්න
+global.listprefix = ['+','!','.'] //prefix එක දාන්න
 global.listv = ['✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json' 
 global.tempatStore = 'baileys_store.json' 
@@ -53,7 +53,7 @@ global.mess = {
 
 
 
-global.badWords = ['පකයා','හුත්තො','පොන්නයා','වේසි']
+global.badWords = ['bitch','fuck','dick','pussy']
 global.chatLength = 1000
 
 
@@ -65,5 +65,6 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
