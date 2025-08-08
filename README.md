@@ -3,8 +3,7 @@
  `Created By  Avishka shavinda`
 
 <p align="center">
-<img src = "https://files.catbox.moe/hhvdoi.jpg"
-  width="300" height="300"/>
+<img src = "https://files.catbox.moe/hhvdoi.jpg"/>
 </p>
 <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=PRINCE+AVI+MD+V3" alt="">
@@ -27,10 +26,20 @@
 ### Please Give One Star ✨ & [follow for me notify my updates 🗡️] (https://github.com/avishka33)
 
 <b>Version -->3</b>
-# 
 
+### ඔබ සතුව නැති දේ ලබා ගැනීමේ පහසුම ක්‍රමය  ඇගයීමයි.. හැකි සෑම විටම තව කෙනෙක්ව ඇගයීමට උත්සහ කරන්න. එය ඔබේ මානසික සංවර්ධිත බවේ සලකුණකි..සංස්කරණය කළ පරිවර්තනයකි! 
+  
+   ### 🔸 Yt: https://youtube.com/@avi_nethunter?si=rXTyaJjAWsNZDotV     
+   
+### 🔸 Whatsapp : wa.me//94772836332 
 
-  🗡️Prince avi md🗡️ whatsapp bot is an easy to use whatsapp robot.   | AVI whatsapp bot යනු ඔබට පහසුවෙන් බාවිතකර හැකි whatsapp robo වරයෙකි.
+### 🔸 Github : https://github.com/avishka33
+
+### 🔸 whatsapp chanel :
+ https://whatsapp.com/channel/0029VaqPVqA1yT2CTlHi0o13
+ https://whatsapp.com/channel/0029VaGisHDFHWq5jpuEmC2t 
+
+  ### 🗡️Prince avi md🗡️ whatsapp bot is an easy to use whatsapp robot.   | AVI whatsapp bot යනු ඔබට පහසුවෙන් බාවිතකර හැකි whatsapp robo වරයෙකි.
 
 # 
 * 𝗙𝗢𝗥𝗞 𝗡𝗢𝗪
