@@ -92,4 +92,8 @@
 ```
   https://heroku.com/deploy?template=
 ```
-# Thank for teame Avi
+# 🛠 Base & Credits
+
+> This bot is *based on [Naze MD](https://github.com/nazedev/Naze-MD)*  
+> Modified, enhanced and maintained by *Avishka Shavinda*  
+> All credits to the original developer.
