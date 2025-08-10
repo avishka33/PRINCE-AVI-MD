@@ -94,6 +94,6 @@
 ```
 # 🛠 Base & Credits
 
-> This bot is *based on [Naze MD](https://github.com/nazedev/Naze-MD)*  
+> This bot is *based on [Naze Dev](https://github.com/nazedev)*  
 > Modified, enhanced and maintained by *Avishka Shavinda*  
 > All credits to the original developer.
