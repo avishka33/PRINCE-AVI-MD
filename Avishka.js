@@ -4807,12 +4807,12 @@ case 'waifu':
   ┃ 
   ┃ ▢ ʙᴜɢ ᴀɴᴅʀᴏɪᴅ
   ┃ ▢ android 
-  ┃ ▢ android2
+  ┃ ▢ one
   ┃ ▢ systemuicrash
   ┃ ▢ sysui
   ┃ ▢ Avil
   ┃ ▢ Avil1
-  ┃ ▢ Avil2
+  ┃ ▢ ffk
   ┃ ▢ ʙᴜɢ ɪᴏꜱ
   ┃ ▢ ios
   ┃ ▢ ios2
@@ -5068,5 +5068,6 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
