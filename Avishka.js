@@ -1225,26 +1225,7 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 				}
 			}
 			break
-			// case 'addcase': {
-			// 	if (!isCreator) return m.reply(mess.owner)
-			// 	if (!text && !text.startsWith('case')) return m.reply('Masukkan Casenya!')
-			// 	fs.readFile('Avishka.js', 'utf8', (err, data) => {
-			// 		if (err) {
-			// 			console.error('Terjadi kesalahan saat membaca file:', err);
-			// 			return;
-			// 		}
-			// 		const posisi = data.indexOf("case '19rujxl1e':");
-			// 		if (posisi !== -1) {
-			// 			const codeBaru = data.slice(0, posisi) + '\n' + `${text}` + '\n' + data.slice(posisi);
-			// 			fs.writeFile('Avishka.js', codeBaru, 'utf8', (err) => {
-			// 				if (err) {
-			// 					m.reply('Terjadi kesalahan saat menulis file: ', err);
-			// 				} else m.reply('Case berhasil ditambahkan');
-			// 			});
-			// 		} else m.reply('Gagal Menambahkan case!');
-			// 	});
-			// }
-			// break
+		
 			case 'getcase': {
 				if (!isCreator) return m.reply(mess.owner)
 				if (!text) return m.reply('Masukkan Nama Casenya!')
@@ -1258,24 +1239,7 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 				}
 			}
 			break
-			case 'delcase': {
-				if (!isCreator) return m.reply(mess.owner)
-				if (!text) return m.reply('Masukkan Nama Casenya!')
-				fs.readFile('Avishka.js', 'utf8', (err, data) => {
-					if (err) {
-						console.error('Terjadi kesalahan saat membaca file:', err);
-						return;
-					}
-					const regex = new RegExp(`case\\s+'${text.toLowerCase()}':[\\s\\S]*?break`, 'g');
-					const modifiedData = data.replace(regex, '');
-					fs.writeFile('Avishka.js', modifiedData, 'utf8', (err) => {
-						if (err) {
-							m.reply('Terjadi kesalahan saat menulis file: ', err);
-						} else m.reply('Case berhasil dihapus dari file');
-					});
-				});
-			}
-			break
+		
 			case 'backup': {
 				if (!isCreator) return m.reply(mess.owner)
 				switch (args[0]) {
@@ -4557,18 +4521,18 @@ case "android": {
       }
         break
 
-		   case 'cry': case 'kill': case 'hug': case 'pat': case 'lick': case 'kiss': case 'bite': case 'yeet': case 'neko': case 'bully': case 'bonk': case 'wink': case 'poke': case 'nom': case 'slap': case 'smile': case 'wave': case 'awoo': case 'blush': case 'smug': case 'glomp': case 'happy': case 'dance': case 'cringe': case 'cuddle': case 'highfive': case 'shinobu': case 'megumin': case 'handhold':
-        //await sendReaction('⏳');
-		await loading();
-        {
-          let dat = await fetchJson('https://api.waifu.pics/sfw/' + command)
-          let img = dat.url
-          let imgs = await (await fetch(img)).buffer()
+		//    case 'cry': case 'kill': case 'hug': case 'pat': case 'lick': case 'kiss': case 'bite': case 'yeet': case 'neko': case 'bully': case 'bonk': case 'wink': case 'poke': case 'nom': case 'slap': case 'smile': case 'wave': case 'awoo': case 'blush': case 'smug': case 'glomp': case 'happy': case 'dance': case 'cringe': case 'cuddle': case 'highfive': case 'shinobu': case 'megumin': case 'handhold':
+  //       //await sendReaction('⏳');
+		// await loading();
+  //       {
+  //         let dat = await fetchJson('https://api.waifu.pics/sfw/' + command)
+  //         let img = dat.url
+  //         let imgs = await (await fetch(img)).buffer()
 
-          Avishka.sendVideoAsSticker(m.chat, imgs, m, { packname: global.packname, author: global.author })
-        }
-       await sendReaction('✔');
-        break
+  //         Avishka.sendVideoAsSticker(m.chat, imgs, m, { packname: global.packname, author: global.author })
+  //       }
+  //      await sendReaction('✔');
+  //       break
 /*|⬡════════════════════════════════════════════|❝   𝙰vi -  NSFW IMAGE	  ™ ❞|═══════════════════════════════════════════⬡|*/
 			
 	
@@ -4884,38 +4848,7 @@ case 'waifu':
   ┃ ▢ emojimix
   ┖━━━━━━━━━━⪩    
       
-  ┏━━━━⪩ STICKER MENU  
-  ┃ ▢  cry
-  ┃ ▢  kill
-  ┃ ▢  hug 
-  ┃ ▢  pat  
-  ┃ ▢  lick 
-  ┃ ▢  kiss 
-  ┃ ▢  bite  
-  ┃ ▢  yeet  
-  ┃ ▢  neko 
-  ┃ ▢  bully 
-  ┃ ▢  bonk  
-  ┃ ▢  wink 
-  ┃ ▢  poke  
-  ┃ ▢  nom 
-  ┃ ▢  slap
-  ┃ ▢  smile  
-  ┃ ▢  wave  
-  ┃ ▢  awoo  
-  ┃ ▢  blush  
-  ┃ ▢  smug  
-  ┃ ▢  glomp  
-  ┃ ▢  happy  
-  ┃ ▢  dance  
-  ┃ ▢  cringe 
-  ┃ ▢  cuddle
-  ┃ ▢  highfive  
-  ┃ ▢  shinobu  
-  ┃ ▢  megumin 
-  ┃ ▢  handhold
-  ┃ ▢  prefa
-  ┖━━━━━━━━━━⪩ 
+ 
 
   ┏━━━━⪩ sound Menu
   ┃ ▢ sad1 
@@ -4994,11 +4927,8 @@ case 'waifu':
 
 
 			default: // m.react('✈');
-			// m.react('✈');
-			// m.react('✈');
-			// m.react('✈');
-			// m.react('🐍');
-			// m.react('✈');
+			
+			
 			if (budy.startsWith('>')) {
 				if (!isCreator) return
 				try {
@@ -5068,6 +4998,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
