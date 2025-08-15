@@ -5,8 +5,8 @@
   "main": "start.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node start.js",
-    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon main.js",
     "debug": "DEBUG=* node start.js"
   },
   "keywords": [
