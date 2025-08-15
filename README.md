@@ -51,20 +51,7 @@
 
   <h6> 🗡️Prince avi md🗡️ whatsapp bot is an easy to use whatsapp robot.   | AVI whatsapp bot යනු ඔබට පහසුවෙන් බාවිතකර හැකි whatsapp robo වරයෙකි.</h6>
 
-# 
-* 𝗙𝗢𝗥𝗞 𝗡𝗢𝗪
 
-<p align="left">
-<a href="<img align="center" src="https://telegra.ph/file/3514997e86c4bb12d8f67.png" alt="Fork and deploy" height="35" width="155" /></a>
-
-## FOR REPLIT USER
-[![Run on Repl.it](https://repl.it/badge/github/zeeone-ofc/Haruka-Md)]
-
-
-
-
-<details>
-<summary>𝗖𝗟𝗜𝗖𝗞 𝗧𝗢 𝗗𝗘𝗣𝗟𝗢𝗬</summary>
 
 
 [`Deploy on Railway`](https://railway.app?referralCode=)
@@ -86,22 +73,7 @@
 
    
    
-# 
-#
-+ DEPLOY STEPS
-# 
-1. Fork This Repository 
-2. Update [config.js]()
-3. Uplode avi.data.json file to sessions folder
-4. Make acount on your host
-5. Connect Your Repository to your web host site
-6. [Watch Videos](https://youtube.com/@Avi_NetHunter)
-# 
-# heroku deploy 👇
 
-```
-  https://heroku.com/deploy?template=
-```
 # 🛠 Base & Credits
 
 > This bot is *based on [Naze Dev](https://github.com/nazedev)*  
