@@ -4100,33 +4100,141 @@ break
            );
            break  
  /*|⬡════════════════════════════════════════════|❝   𝙰vi -  ™ ❞|═══════════════════════════════════════════⬡|*/       
-        case 'hack':
-      case 'avi hacker':
-		Avishka.sendMessage(m.chat, {
-            text: `*AVI H4CK3R'S TEAM*`,
-            contextInfo: {
-              externalAdReply: {
-                showAdAttribution: true,
-                title: `${botname}`,
-                body: `SCRIPT OF ${botname} is on YouTube @Avishka Shavinda`,
-                thumbnailUrl: 'https://files.catbox.moe/hhvdoi.jpg',
-                sourceUrl: global.link,
-                mediaType: 1,
-                renderLargerThumbnail: true
-              }
-            }
-          }, {
-            quoted: m
-          })
-          Avishka.sendMessage(m.chat, {
-            video: { url: 'https://files.catbox.moe/hhh20o.mp4' },
-			caption: `*AVI H4CK3R'S TEAM*`,
-            mimetype: 'video/mp4',
-            ptt: true
-          }, { quoted: m }
-          );
-        
-        break
+   		case 'song':
+			case 'play': case 'video': {
+				if (!text) {
+					return m.reply(`  Example : රෝස මලේ නටුවෙ කටු  \n \n _© 𝙰𝚕𝚙𝚑𝚊 𝚅𝚒𝚜𝚒𝚘𝚗 𝙸𝚗𝚏𝚒𝚗𝚒𝚝𝚢_`)
+				}
+				try {
+					Avishka.sendButtonMsg(m.chat, { react: { text: `⌛`, key: m.key } })
+					const yts = require('yt-search')
+					const nyoba = await yts(text);
+					const { url, title, description, thumbnail, duration, ago, views, author } = nyoba.all[0];
+					const body = `• *Title:* ${title}\n ` +
+						`• *Channel:* ${author.name}\n` +
+						`• *Duration:* ${duration}\n` +
+						`• *Link:* ${url}\n *ඔබට අවශය විඩියොවක් ලෙසද නැත්නම් සිංදුවක් විදිහටද ?* \n \n _© 𝙰𝚕𝚙𝚑𝚊 𝚅𝚒𝚜𝚒𝚘𝚗 𝙸𝚗𝚏𝚒𝚗𝚒𝚝𝚢_`
+					const buttons = [
+						{
+							buttonId: `${prefix}ytmp3 ${url}`,
+							buttonText: { displayText: 'Audio' },
+							type: 1
+						},
+						{
+							buttonId: `${prefix}ytmp4 ${url}`,
+							buttonText: { displayText: 'Video' },
+							type: 1
+						}
+					]
+					await Avishka.sendButtonMsg(m.chat, {
+						image: { url: thumbnail },
+						caption: body,
+						footer: null,
+						buttons: buttons,
+						headerType: 1,
+						viewOnce: false
+					}, { quoted: m })
+				} catch (err) {
+					console.error(err)
+					m.reply('*කිසියම් දෝශයක් සිදුවී ඇත , නවත උත්සාහ කරන්න:* ' + err)
+				}
+			}
+				break
+
+
+
+
+case 'ytmp3': {
+				if (!text) return m.reply(`*කෝ යුටියුබ් ලින්ක් එක. where's the yt link ?:* ${prefix + command} https://youtube.com/watch?v=Xs0Lxif1u9E`);
+				const url = text.trim();
+				const format = 'mp3';
+				const regex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$/;
+				if (!regex.test(url)) {
+					return m.reply('The link you provided is invalid, please enter the correct link.');
+				}
+				m.reply(' මොහොතක් රැදීසිටින්න.✨ ');
+				try {
+					const headers = {
+						"accept": "*/*",
+						"accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+						"sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\"",
+						"sec-ch-ua-mobile": "?1",
+						"sec-ch-ua-platform": "\"Android\"",
+						"sec-fetch-dest": "empty",
+						"sec-fetch-mode": "cors",
+						"sec-fetch-site": "cross-site",
+						"Referer": "https://id.ytmp3.mobi/",
+						"Referrer-Policy": "strict-origin-when-cross-origin"
+					}
+					const initial = await fetch(`https://d.ymcdn.org/api/v1/init?p=y&23=1llum1n471&_=${Math.random()}`, { headers });
+					let format = 'mp4';
+					const init = await initial.json();
+					const id = url.match(/(?:youtu\.be\/|youtube\.com\/(?:.*v=|.*\/|.*embed\/))([^&?/]+)/)?.[1];
+					let convertURL = init.convertURL + `&v=${id}&f=${format}&_=${Math.random()}`;
+					const converts = await fetch(convertURL, { headers });
+					const convert = await converts.json();
+					let info = {};
+					for (let i = 0; i < 3; i++) {
+						let j = await fetch(convert.progressURL, { headers });
+						info = await j.json();
+						console.log(info);
+						if (info.progress == 3) break;
+					}
+					const result = {
+						url: convert.downloadURL,
+						title: info.title
+					}
+					await Avishka.sendMessage(m.chat, {
+						audio: { url: result.url },
+						mimetype: 'audio/mp4'
+					}, { quoted: m });
+				} catch {
+					m.reply('Error..')
+				}
+			}
+				break
+
+
+	case 'ytmp4': {
+				if (!text) return m.reply(`Please enter the YouTube link, for example: ${prefix + command} https://youtube.com/watch?v=Xs0Lxif1u9E`);
+				try {
+					const url = text.trim();
+					const headers = {
+						"accept": "*/*",
+						"accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+						"sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\"",
+						"sec-ch-ua-mobile": "?1",
+						"sec-ch-ua-platform": "\"Android\"",
+						"sec-fetch-dest": "empty",
+						"sec-fetch-mode": "cors",
+						"sec-fetch-site": "cross-site",
+						"Referer": "https://id.ytmp3.mobi/",
+						"Referrer-Policy": "strict-origin-when-cross-origin"
+					}
+					const initial = await fetch(`https://d.ymcdn.org/api/v1/init?p=y&23=1llum1n471&_=${Math.random()}`, { headers });
+					let format = 'mp4';
+					const init = await initial.json();
+					const id = url.match(/(?:youtu\.be\/|youtube\.com\/(?:.*v=|.*\/|.*embed\/))([^&?/]+)/)?.[1];
+					let convertURL = init.convertURL + `&v=${id}&f=${format}&_=${Math.random()}`;
+					const converts = await fetch(convertURL, { headers });
+					const convert = await converts.json();
+					let info = {};
+					for (let i = 0; i < 3; i++) {
+						let j = await fetch(convert.progressURL, { headers });
+						info = await j.json();
+						console.log(info);
+						if (info.progress == 3) break;
+					}
+					const result = {
+						url: convert.downloadURL,
+						title: info.title
+					}
+					await Avishka.sendMessage(m.chat, { video: { url: result.url } }, { quoted: m });
+				} catch {
+					m.reply(' Error..')
+				}
+			}
+				break			
  /*|⬡════════════════════════════════════════════|❝   𝙰vi -  ™ ❞|═══════════════════════════════════════════⬡|*/    
 		 //Good Night
 		case 'gn':  case 'good night':
@@ -4961,6 +5069,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
