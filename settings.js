@@ -15,8 +15,8 @@ const chalk = require('chalk');
 
 global.authors = 'Avishka shavinda'
 global.botname = 'Avi'
-global.listprefixx = ['+','!','.'] 
-global.lstimg = ['✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
+global.listprefix = ['+','!','.'] 
+global.listv = ['✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json' 
 global.tempatStore = 'baileys_store.json' 
 global.pairing_code = true
@@ -84,3 +84,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
