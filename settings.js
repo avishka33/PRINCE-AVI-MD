@@ -1,14 +1,22 @@
+/*═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+												 Avishka shavinda 
+												 Sri lanka  
+												 © 𝙰𝚕𝚙𝚑𝚊 𝚅𝚒𝚜𝚒𝚘𝚗 𝙸𝚗𝚏𝚒𝚗𝚒𝚝𝚢   
+
+/═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════*/
+
+
+
+
+
 const fs = require('fs');
 const chalk = require('chalk');
 
-
-
-//~~~~~~~~~~~~< SETTINGS >~~~~~~~~~~~~\\
-
-
-global.botname = 'Avi' //මෙතන්ට ඔයාගෙ බොට්ගෙ නම දාන්න
-global.listprefix = ['+','!','.'] //prefix එක දාන්න
-global.listv = ['✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
+global.authors = 'Avishka shavinda'
+global.botname = 'Avi'
+global.listprefixx = ['+','!','.'] 
+global.lstimg = ['✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json' 
 global.tempatStore = 'baileys_store.json' 
 global.pairing_code = true
@@ -22,7 +30,12 @@ global.fake = {
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/vnd.openxmlformats-officedocument.presentationml.presentation','application/vnd.openxmlformats-officedocument.wordprocessingml.document','application/pdf'],
 }
 
-
+global.my = {
+	yt: 'https://youtube.com/Avi_Nethunter',
+	gh: 'https://github.com/avishka33',
+	gc: 'https://whatsapp.com/channel/0029VaGisHDFHWq5jpuEmC2t',
+	ch: '120363358746473104@newsletter',
+}
 
 global.limit = {
 	free: 20,
@@ -50,10 +63,16 @@ global.mess = {
 	done: 'Done'
 }
 
+global.APIs = {
+	hitori: 'https://api.hitori.pw',
+}
+global.APIKeys = {
+	'https://api.hitori.pw': 'htrkey-77eb83c0eeb39d40',
+	geminiApikey: ['AIzaSyD0lkGz6ZhKi_MHSSmJcCX3wXoDZhELPaQ','AIzaSyDnBPd_EhBfr73NssnThVQZYiKZVhGZewU','AIzaSyA94OZD-0V4quRbzPb2j75AuzSblPHE75M','AIzaSyB5aTYbUg2VQ0oXr5hdJPN8AyLJcmM84-A','AIzaSyB1xYZ2YImnBdi2Bh-If_8lj6rvSkabqlA']
+}
 
 
-
-global.badWords = ['bitch','fuck','dick','pussy']
+global.badWords = ['fuck you']
 global.chatLength = 1000
 
 
@@ -65,6 +84,3 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
-
-
-
