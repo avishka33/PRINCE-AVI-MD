@@ -25,6 +25,7 @@ const https = require('https');
 const axios = require('axios');
 const chalk = require('chalk');
 const yts = require('yt-search');
+const { ytDonlodMp3, ytDonlodMp4, ytPlayMp3, ytPlayMp4, ytSearch } = require('./system/src/yt')
 const ytdl = require('ytdl-core');
 const cron = require('node-cron');
 const cheerio = require('cheerio');
@@ -694,14 +695,10 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 		
 		// Set Mode
 		if (!isCreator) {
-			if ((set.grouponly === set.peonly)) {
-				if (!Avishka.public && !m.key.fromMe) return
-			} else if (set.grouponly) {
-				if (!m.isGroup) return
-			} else if (set.privateonly) {
-				if (m.isGroup) return
-			}
+			if (!Avishka.public && !
+				m.key.fromMe) return
 		}
+
 		
 		// Group Settings
 		if (m.isGroup) {
@@ -2872,7 +2869,7 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 			break
 			
 			// Downloader Menu
-			case 'ytmp3': case 'ytaudio': case 'ytplayaudio': {
+			case 'song2':  {
 				if (!isLimit) return m.reply(mess.limit)
 				if (!text) return m.reply(`Example: ${prefix + command} url_youtube`)
 				if (!text.includes('youtu')) return m.reply('Url Tidak Mengandung Result Dari Youtube!')
@@ -5069,6 +5066,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
