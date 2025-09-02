@@ -1,6 +1,6 @@
 
 /*═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-                                                  AVI OFC , TEAM AVI HAKER'S                                                                                                                                                                                                                                               
+                                                  𝙰𝚕𝚙𝚑𝚊 𝚅𝚒𝚜𝚒𝚘𝚗 𝙸𝚗𝚏𝚒𝚗𝚒𝚝𝚢                                                                                                                                                                                                                                             
 /═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════*/
 //Api keys 
 
@@ -167,7 +167,7 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 
 
     /*|⬡════════════════════════════════════════════|❝   𝙰vi - Bug function  ™ ❞|═══════════════════════════════════════════⬡|*/
-    /*|⬡════════════════════════════════════════════|❝   𝙰vi - OFC  ™ ❞|═══════════════════════════════════════════⬡|*/
+    /*|⬡════════════════════════════════════════════|❝   𝙰𝚕𝚙𝚑𝚊 𝚅𝚒𝚜𝚒𝚘𝚗 𝙸𝚗𝚏𝚒𝚗𝚒𝚝𝚢 ❞|═══════════════════════════════════════════⬡|*/
     /*|⬡════════════════════════════════════════════|❝   𝙰vi - Intelligence  ™ ❞|═══════════════════════════════════════════⬡|*/
 
 
@@ -897,17 +897,8 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 		
 		
 		switch(command) {
-			/*|⬡════════════════════════════════════════════|❝   𝙰vi -  Add Case..  ™ ❞|═══════════════════════════════════════════⬡|*/
+	
 			
-			case '19r': {
-				console.log('.')
-			}
-			break
-			case 'uji': {
-				console.log(args[0])
-				Avishka.appendResponseMessage(m, args[0])
-			}
-			break
 			/*|⬡════════════════════════════════════════════|❝   𝙰vi -   Owner Menu..  ™ ❞|═══════════════════════════════════════════⬡|*/
 			
 			case 'shutdown': case 'off': {
@@ -1907,35 +1898,7 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 				m.reply(`Berhasil menambahkan pesan di list pesan sebagai '${text}'\nAkses dengan ${prefix}getmsg ${text}\nLihat list Pesan Dengan ${prefix}listmsg`)
 			}
 			break
-			// case 'delmsg': case 'deletemsg': {
-			// 	if (!text) return m.reply('Nama msg yg mau di delete?')
-			// 	let msgs = db.database
-			// 	if (text == 'allmsg') {
-			// 		db.database = {}
-			// 		m.reply('Berhasil menghapus seluruh msg dari list pesan')
-			// 	} else {
-			// 		if (!(text.toLowerCase() in msgs)) return m.reply(`'${text}' tidak terdaftar didalam list pesan`)
-			// 		delete msgs[text.toLowerCase()]
-			// 		m.reply(`Berhasil menghapus '${text}' dari list pesan`)
-			// 	}
-			// }
-			// break
-			// case 'getmsg': {
-			// 	if (!text) return m.reply(`Example : ${prefix + command} file name\n\nLihat list pesan dengan ${prefix}listmsg`)
-			// 	let msgs = db.database
-			// 	if (!(text.toLowerCase() in msgs)) return m.reply(`'${text}' tidak terdaftar di list pesan`)
-			// 	await Avishka.relayMessage(m.chat, msgs[text.toLowerCase()], {})
-			// }
-			// break
-			// case 'listmsg': {
-			// 	let seplit = Object.entries(db.database).map(([nama, isi]) => { return { nama, message: getContentType(isi) }})
-			// 	let teks = '「 LIST DATABASE 」\n\n'
-			// 	for (let i of seplit) {
-			// 		teks += `${setv} *Name :* ${i.nama}\n${setv} *Type :* ${i.message?.replace(/Message/i, '')}\n───────────────\n`
-			// 	}
-			// 	m.reply(teks)
-			// }
-			// break
+	
 			case 'q': case 'quoted': {
 				if (!m.quoted) return m.reply('Reply Pesannya!')
 				if (text) {
@@ -4967,27 +4930,27 @@ case 'waifu':
 		errorCache[errorKey] = errorCache[errorKey].filter(ts => now - ts < 600000);
 		if (errorCache[errorKey].length >= 3) return;
 		errorCache[errorKey].push(now);
-		if (e?.status === 404) msg = 'Resource tidak ditemukan (404).'
-		else if (e?.status === 403) msg = 'Akses dibatasi (403).'
-		else if (e?.code === 'ETIMEDOUT') msg = 'Sepertinya servernya terlalu lama merespons. Coba periksa koneksi internet.'
-		else if (e?.code === 'ENOTFOUND') msg = 'Sepertinya server tidak ditemukan. Periksa koneksi internet kamu.'
-		else if (e?.code === 'ERR_OSSL_BAD_DECRYPT') msg = 'Sepertinya terjadi kesalahan saat mendekripsi data. Pastikan kunci valid.'
-		else if (e?.name === 'TypeError') msg = 'Sepertinya ada masalah dengan tipe data yang diuse.'
-		else if (e?.name === 'ReferenceError') msg = 'Sepertinya ada variabel yang belum didefinisikan.'
-		else if (e?.name === 'SessionError') msg = 'Sepertinya ada masalah dengan sesi. Pastikan semuanya sudah terhubung dengan benar.'
-		else if (e?.name === 'AxiosError') msg = 'Sepertinya ada masalah dengan pengambilan data, coba cek koneksi.'
-		else if (e?.message?.includes('not-acceptable') || e?.data === 406) msg = 'Permintaan tidak diterima server (406 Not Acceptable). Cek apakah format atau isi permintaan sudah sesuai.'
-		else if (e?.output?.statusCode === 408 || e?.message?.includes('Timed Out')) msg = 'Sepertinya permintaan melebihi batas waktu, coba lagi nanti.'
-		else if (e?.output?.statusCode === 404 || e?.message?.includes('myAppStateKey')) msg = 'Sepertinya state key tidak ditemukan, silahkan coba lagi nanti.'
-		else if (e?.output?.statusCode === 500 || e?.message?.includes('internal-server-error')) msg = 'Sepertinya terjadi error didalam server, silahkan coba lagi nanti.'
-		else if (e?.message?.includes('Media upload failed on all hosts')) msg = 'Sepertinya gagal mengunggah media, coba cek pengaturan server.'
-		else if (e?.message?.includes('No sessions')) msg = 'Sepertinya session tidak ditemukan, mungkin bot tidak akan merespon.'
-		else if (e?.message?.includes('Cannot find ffmpeg')) msg = 'Sepertinya ffmpeg belum terpasang di sistem, silahkan install terlebih dahulu.'
-		else if (e?.message?.includes('Cannot find module')) msg = 'Sepertinya ada modul yang belum terpasang di sistem, silahkan install terlebih dahulu.'
+		if (e?.status === 404) msg = 'Resource not found (404).'
+		else if (e?.status === 403) msg = 'Access restricted (403).'
+		else if (e?.code === 'ETIMEDOUT') msg = 'It seems like the server is taking too long to respond. Try checking your internet connection..'
+		else if (e?.code === 'ENOTFOUND') msg = 'It looks like the server was not found. Check your internet connection..'
+		else if (e?.code === 'ERR_OSSL_BAD_DECRYPT') msg = 'It looks like an error occurred while decrypting the data. Make sure the key is valid.'
+		else if (e?.name === 'TypeError') msg = 'There seems to be a problem with the data type being used.'
+		else if (e?.name === 'ReferenceError') msg = 'It looks like there is a variable that has not been defined yet.'
+		else if (e?.name === 'SessionError') msg = 'There seems to be a problem with the session. Make sure everything is connected properly.'
+		else if (e?.name === 'AxiosError') msg = 'There seems to be a problem with data retrieval, please check the connection.'
+		else if (e?.message?.includes('not-acceptable') || e?.data === 406) msg = 'The request was not accepted by the server (406 Not Acceptable). Check that the format and content of the request are correct.'
+		else if (e?.output?.statusCode === 408 || e?.message?.includes('Timed Out')) msg = 'It looks like the request has exceeded the time limit, please try again later.'
+		else if (e?.output?.statusCode === 404 || e?.message?.includes('myAppStateKey')) msg = 'It looks like the state key was not found, please try again later.'
+		else if (e?.output?.statusCode === 500 || e?.message?.includes('internal-server-error')) msg = 'It seems there was an error in the server, please try again later.'
+		else if (e?.message?.includes('Media upload failed on all hosts')) msg = 'It seems like media upload failed, try checking server settings.'
+		else if (e?.message?.includes('No sessions')) msg = 'It looks like the session was not found, maybe the bot will not respond.'
+		else if (e?.message?.includes('Cannot find ffmpeg')) msg = 'It seems that ffmpeg is not installed on the system, please install it first.'
+		else if (e?.message?.includes('Cannot find module')) msg = 'It seems that there is a module that is not installed in the system, please install it first.'
 		if (msg) {
-			m.reply(msg + '\n\nError: ' + (e?.name || e?.code || e?.output?.statusCode || e?.status || 'Tidak diketahui') + '\nLog Error Telah dikirim ke Owner\n\n')
+			m.reply(msg + '\n\nError: ' + (e?.name || e?.code || e?.output?.statusCode || e?.status || 'Unknown') + '\nLog Error Telah dikirim ke Owner\n\n')
 		}
-		return Avishka.sendFromOwner(owner, `Halo sayang, sepertinya ada yang error nih, jangan lupa diperbaiki ya\n\nVersion : *${require('./package.json').version}*\n\n*Log error:*\n\n` + util.format(e), m, { contextInfo: { isForwarded: true }})
+		return Avishka.sendFromOwner(owner, `Hi dear, it seems like there is an error, don't forget to fix it, okay?\n\nVersion : *${require('./package.json').version}*\n\n*Log error:*\n\n` + util.format(e), m, { contextInfo: { isForwarded: true }})
 	}
 }
 
@@ -4998,6 +4961,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
