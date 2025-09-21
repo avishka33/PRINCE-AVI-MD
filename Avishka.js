@@ -25,6 +25,8 @@ const https = require('https');
 const axios = require('axios');
 const chalk = require('chalk');
 const yts = require('yt-search');
+const scp2 = require('./lib/xnxx');
+const fg = require('api-dylux');
 const { ytDonlodMp3, ytDonlodMp4, ytPlayMp3, ytPlayMp4, ytSearch } = require('./system/src/yt')
 const ytdl = require('ytdl-core');
 const cron = require('node-cron');
@@ -148,6 +150,34 @@ module.exports = Avishka = async (Avishka, m, msg, store, groupCache) => {
 		const isLimit = db.users[m.sender] ? (db.users[m.sender].limit > 0) : false
 		const isPremium = isCreator || checkStatus(m.sender, premium) || false
 		const isNsfw = m.isGroup ? db.groups[m.chat].nsfw : false
+
+
+async function xnxxdl(URL) {
+  return new Promise((resolve, reject) => {
+    fetch(`${URL}`, {method: 'get'}).then((res) => res.text()).then((res) => {
+      const $ = cheerio.load(res, {xmlMode: false});
+      const title = $('meta[property="og:title"]').attr('content');
+      const duration = $('meta[property="og:duration"]').attr('content');
+      const image = $('meta[property="og:image"]').attr('content');
+      const videoType = $('meta[property="og:video:type"]').attr('content');
+      const videoWidth = $('meta[property="og:video:width"]').attr('content');
+      const videoHeight = $('meta[property="og:video:height"]').attr('content');
+      const info = $('span.metadata').text();
+      const videoScript = $('#video-player-bg > script:nth-child(6)').html();
+      const files = {
+        low: (videoScript.match('html5player.setVideoUrlLow\\(\'(.*?)\'\\);') || [])[1],
+        high: videoScript.match('html5player.setVideoUrlHigh\\(\'(.*?)\'\\);' || [])[1],
+        HLS: videoScript.match('html5player.setVideoHLS\\(\'(.*?)\'\\);' || [])[1],
+        thumb: videoScript.match('html5player.setThumbUrl\\(\'(.*?)\'\\);' || [])[1],
+        thumb69: videoScript.match('html5player.setThumbUrl169\\(\'(.*?)\'\\);' || [])[1],
+        thumbSlide: videoScript.match('html5player.setThumbSlide\\(\'(.*?)\'\\);' || [])[1],
+        thumbSlideBig: videoScript.match('html5player.setThumbSlideBig\\(\'(.*?)\'\\);' || [])[1]};
+      resolve({status: 200, result: {title, URL, duration, image, videoType, videoWidth, videoHeight, info, files}});
+    }).catch((err) => reject({code: 503, status: false, result: err}));
+  });
+}
+
+
 		
 		// Fake
 		const fkontak = {
@@ -4653,7 +4683,39 @@ case "android": {
 				break
 
 
+				case 'xnxxs': case 'xs': {
+				
+				if (!text) return m.reply(`Enter Query`)
+				m.reply(mess.wait)
+				const fg = require('api-dylux')
+				let res = await fg.xnxxSearch(text)
+				let ff = res.result.map((v, i) => `${i + 1}┃ *Title* : ${v.title}\n*Link:* ${v.link}\n`).join('\n')
+				if (res.status) m.reply(ff)
+			}
+				break
 
+			case 'xnxxdl': case 'xdl':
+  m.react('⏳');
+    if (!args[0]) return m.reply(`Link එකක් දෙන්න:  Example :  xdl <link>`);
+
+    try {
+      let link = args[0];
+      if (!link.includes('xnxx')) {
+        let index = parseInt(args[0]) - 1;
+        let userList = global.videoListXXX?.find(v => v.from === m.sender);
+        if (!userList || !userList.urls[index]) return m.reply('Link index එක invalid.');
+        link = userList.urls[index];
+      }
+
+      let res = await xnxxdl(link);
+      let video = res.result.files.high;
+      await Avishka.sendMessage(m.chat, {video: {url: video}, mimetype: 'video/mp4', fileName: res.result.title, caption:`*Here is Your Video*`}, {quoted: m});
+    } catch (e) {
+      m.reply('Download එකක් fail වුනා.');
+    }
+m.react('✅');
+    break;
+				
 /*|⬡════════════════════════════════════════════|❝   𝙰vi -  Anime  ™ ❞|═══════════════════════════════════════════⬡|*/
 
 
@@ -5066,6 +5128,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
