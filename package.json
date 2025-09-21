@@ -1,16 +1,16 @@
 {
   "name": "Avi",
-  "version": "1.0.3",
+  "version": "1.4.0",
   "description": "Avi Bot WhatsApp Using Lib Baileys Multi Device",
   "main": "start.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon main.js",
+    "start": "node start.js",
+    "dev": "nodemon index.js",
     "debug": "DEBUG=* node start.js"
   },
   "keywords": [
-    "Avi-bot",
+    "whatsapp-bot",
     "baileys-md",
     "bot-wa",
     "multi-device"
@@ -30,7 +30,7 @@
     "@ibaraki-douji/pixivts": "^2.4.1",
     "aki-api": "npm:@aqul/akinator-api@1.0.1",
     "awesome-phonenumber": "^4.4.0",
-   "api-dylux": "^0.24.0",
+     "api-dylux": "^1.4.4",
     "axios": "^0.24.0",
     "baileys": "latest",
     "chalk": "^4.1.2",
