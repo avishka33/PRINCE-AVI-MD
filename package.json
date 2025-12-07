@@ -1,6 +1,6 @@
 {
   "name": "Avi",
-  "version": "1.4.0",
+  "version": "4.0.0",
   "description": "Avi Bot WhatsApp Using Lib Baileys Multi Device",
   "main": "start.js",
   "type": "commonjs",
@@ -11,7 +11,7 @@
   },
   "keywords": [
     "whatsapp-bot",
-    "baileys-md",
+    "PRINCE-AVI-MD",
     "bot-wa",
     "multi-device"
   ],
@@ -84,10 +84,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avishka33/PRINCE-AVI-MD-v3.git"
+    "url": "git+https://github.com/avishka33/PRINCE-AVI-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/avishka33/PRINCE-AVI-MD-v3/issues"
+    "url": "https://github.com/avishka33/PRINCE-AVI-MD/issues"
   },
-  "homepage": "https://github.com/avishka33/PRINCE-AVI-MD-v3#readme"
+  "homepage": "https://github.com/avishka33/PRINCE-AVI-MD#readme"
 }
