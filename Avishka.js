@@ -4285,7 +4285,7 @@ case 'ytmp3': {
             Avishka.sendMessage(m.chat, {
               audio: { url: 'https://files.catbox.moe/ce64ez.mp3' },
               mimetype: 'audio/mp4',
-              ptt: true
+              ptt: false
             }, { quoted: m }
             );
           break
@@ -4319,7 +4319,7 @@ case 'ytmp3': {
             audio: { url: 'https://files.catbox.moe/jmil14.mp3' },
 			
             mimetype: 'audio/mp4',
-            ptt: true
+            ptt: false
           }, { quoted: m }
           );
       
@@ -5128,6 +5128,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
