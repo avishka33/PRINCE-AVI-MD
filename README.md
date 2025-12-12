@@ -4,7 +4,7 @@
  `Created By  Avishka shavinda`
 
 <p align="center">
-<img src = "https://files.catbox.moe/hhvdoi.jpg"/>
+<img src = "https://files.catbox.moe/kbw4oy.jpg"/>
 </p>
 <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=PRINCE+AVI+MD+V3" alt="">
