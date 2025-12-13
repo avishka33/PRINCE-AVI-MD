@@ -53,7 +53,10 @@
    
 ```🔸 Whatsapp : wa.me//94772836332 ```
 
-```🔸 Github : https://github.com/avishka33``
+🔸 Github :
+
+<button> <a href="https://github.com/avishka33"> </a> github </button> 
+
 ``🔸 whatsapp chanel :
  https://whatsapp.com/channel/0029VaqPVqA1yT2CTlHi0o13
  https://whatsapp.com/channel/0029VaGisHDFHWq5jpuEmC2t```
