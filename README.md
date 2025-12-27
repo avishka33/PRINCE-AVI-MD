@@ -28,6 +28,8 @@
 
 ```New features are being added to this bot, so fork it and update when the update comes out. Some features work may be lost.```
 
+``` Avi-ui සහ Avi-ui-pro BUG කමාන්ඩ් එකතු කර ඇත. මෙම කමාන්ඩ් භාවිතයෙන් ජංගම දුරකතයනයට හානිවිය හැක.  Avi-ui and Avi-ui-pro BUG commands have been added. These commands may damage the mobile phone. ```
+
 <br/> <br/> <br/> <br/> <br/> <br/>
 
 # Features
