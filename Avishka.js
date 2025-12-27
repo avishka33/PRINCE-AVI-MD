@@ -1343,10 +1343,10 @@ async function xnxxdl(URL) {
 				m.reply('*love*');
 				let profile
 				try {
-					profile = 'https://files.catbox.moe/sbogao.jpg';
-					//profile = 'https://files.catbox.moe/sbogao.jpg';
+					profile = 'https://files.catbox.moe/jggkxf.jpg';
+					//profile = 'https://files.catbox.moe/jggkxf.jpg';
 				} catch (e) {
-					profile = 'https://files.catbox.moe/sbogao.jpg';
+					profile = 'https://files.catbox.moe/jggkxf.jpg';
 				}
 				
 			}
@@ -1364,10 +1364,10 @@ async function xnxxdl(URL) {
 			case 'alive': {
 				let profile
 				try {
-					profile = 'https://files.catbox.moe/sbogao.jpg';
-					//profile = 'https://files.catbox.moe/sbogao.jpg';
+					profile = 'https://files.catbox.moe/jggkxf.jpg';
+					//profile = 'https://files.catbox.moe/jggkxf.jpg';
 				} catch (e) {
-					profile = 'https://files.catbox.moe/sbogao.jpg';
+					profile = 'https://files.catbox.moe/jggkxf.jpg';
 				}
 				const menunya = `\n 
  ┏━━━━⪩
@@ -3649,7 +3649,7 @@ break
                 showAdAttribution: true,
                 title: `${botname}`,
                 body: `SCRIPT OF ${botname} is on YouTube @Avishka Shavinda`,
-                thumbnailUrl: 'https://files.catbox.moe/hhvdoi.jpg',
+                thumbnailUrl: 'https://files.catbox.moe/jggkxf.jpg',
                 sourceUrl: global.link,
                 mediaType: 1,
                 renderLargerThumbnail: true
@@ -3817,7 +3817,7 @@ case 'ytmp3': {
                 showAdAttribution: true,
                 title: `${botname}`,
                 body: `SCRIPT OF ${botname} is on YouTube @Avishka Shavinda`,
-                thumbnailUrl: 'https://files.catbox.moe/sbogao.jpg',
+                thumbnailUrl: 'https://files.catbox.moe/jggkxf.jpg',
                 sourceUrl: global.link,
                 mediaType: 1,
                 renderLargerThumbnail: true
@@ -3850,7 +3850,7 @@ case 'ytmp3': {
               showAdAttribution: true,
               title: `${botname}`,
               body: `Created By : Avishka Shavinda`,
-              thumbnailUrl: 'https://files.catbox.moe/sbogao.jpg',
+              thumbnailUrl: 'https://files.catbox.moe/jggkxf.jpg',
 			 
               sourceUrl: global.link,
               mediaType: 1,
@@ -3879,7 +3879,7 @@ case 'whatsapmode': case'mode':
               showAdAttribution: true,
               title: `${botname}`,
               body: `Created By : Avishka Shavinda`,
-              thumbnailUrl: 'https://files.catbox.moe/sbogao.jpg',
+              thumbnailUrl: 'https://files.catbox.moe/jggkxf.jpg',
 			 
               sourceUrl: global.link,
               mediaType: 1,
@@ -3903,7 +3903,7 @@ case 'whatsapmode': case'mode':
                 showAdAttribution: true,
                 title: `${botname}`,
                 body: `SCRIPT OF ${botname} is on YouTube @Avishka Shavinda`,
-                thumbnailUrl: 'https://files.catbox.moe/sbogao.jpg',
+                thumbnailUrl: 'https://files.catbox.moe/jggkxf.jpg',
                 sourceUrl: global.link,
                 mediaType: 1,
                 renderLargerThumbnail: true
@@ -4415,10 +4415,10 @@ case 'waifu':
 
 				let profile
 				try {
-					profile = 'https://files.catbox.moe/sbogao.jpg';
+					profile = 'https://files.catbox.moe/jggkxf.jpg';
 				
 				} catch (e) {
-					profile = 'https://files.catbox.moe/hhvdoi.jpg';
+					profile = 'https://files.catbox.moe/jggkxf.jpg';
 					
 				}
 				const menunya = `
@@ -4673,6 +4673,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
