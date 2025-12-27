@@ -4443,8 +4443,10 @@ case 'waifu':
   ┃ ▢ facebook
   ┖━━━━━━━━━━⪩ 
   ┏━━━━⪩ Bug ᴍᴇɴᴜ 
-  ┃ 
+  ┃
   ┃ ▢ ʙᴜɢ ᴀɴᴅʀᴏɪᴅ
+  ┃ ▢ Avi-ui
+  ┃ ▢ Avi-ui-pro
   ┃ ▢ android 
   ┃ ▢ one
   ┃ ▢ systemuicrash
@@ -4673,6 +4675,7 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
 
