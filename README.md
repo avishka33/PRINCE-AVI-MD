@@ -77,15 +77,16 @@ Enjoy bugging responsibly! ✨
 
   ```Yt: https://youtube.com/@avi_nethunter?si=rXTyaJjAWsNZDotV```
    
-```🔸 Whatsapp : wa.me//94772836332 ```
+ 🔸 Whatsapp : https://wa.me//94772836332 <br>
+ https://wa.link/z4p7ug
 
 🔸 Github :
 
 <button> <a href="https://github.com/avishka33"> </a> github </button> 
 
-``🔸 whatsapp chanel :
+🔸 whatsapp chanel :
  https://whatsapp.com/channel/0029VaqPVqA1yT2CTlHi0o13
- https://whatsapp.com/channel/0029VaGisHDFHWq5jpuEmC2t```
+ https://whatsapp.com/channel/0029VaGisHDFHWq5jpuEmC2t
 
   <h6> 🗡️Prince avi md🗡️ whatsapp bot is an easy to use whatsapp robot.   | AVI whatsapp bot යනු ඔබට පහසුවෙන් බාවිතකර හැකි whatsapp robo වරයෙකි.</h6>
 
