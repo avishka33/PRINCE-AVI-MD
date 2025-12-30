@@ -50,7 +50,7 @@ Enjoy bugging responsibly! ✨
 └────────────────────────┘
 
 ╭────────────────╮
-│ 🛠️ UPDATE LOG (v2.6.0)       
+ │ 🛠️ UPDATE LOG (v2.6.0)       
 ├───────────────────────┤
 │                              
 │ ➜ 🛡️ ANTI-DELETE             
