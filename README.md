@@ -119,18 +119,40 @@ Enjoy bugging responsibly! ✨
 
 
 
+# heroku template
 
-[`Deploy on Railway`](https://railway.app?referralCode=)
+``` 
+https://heroku.com/deploy?template=
+```
 
-[`Deploy on Koyeb`](https://app.koyeb.com/)
+# Build pack
 
-[`Deploy on Mogenius`](https://studio.mogenius.com/)
+``` 
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+```
 
-[`Deploy on heroku`]
+```
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+```
 
-[`Deploy on Replit`](https://replit.com)
 
-[`Deploy on Uffizzi`](https://www.uffizzi.com/)
+# Termux/ssh/ubuntu
+```
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+git clone https://github.com/avishka33/PRINCE-AVI-MD
+cd PRINCE-AVI-MD
+yarn install
+npm start
+```
 </details>
 
 ## [`WATCH YOUTUBE VIDEOS`](https://youtube.com/@Avi_NetHunter)
