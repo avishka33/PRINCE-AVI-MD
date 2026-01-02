@@ -21,6 +21,7 @@
 <b> Version > 4 </b>
 
 ## ⚠️ Disclaimer
+## ශ්‍රී ලංකාවේ එකම whatsapp Bug බොට් 
 
 **Note:**  
 This Tool is designed strictly for educational and research purposes to highlight vulnerabilities in applications. Any unauthorized use to harm individuals, groups, or organizations is strictly prohibited. Ensure you comply with all applicable laws before using this Tool.
