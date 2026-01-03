@@ -7,7 +7,7 @@
 <img src = "https://files.catbox.moe/jggkxf.jpg"/>
 </p>
 <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=PRINCE+AVI+MD+V3" alt="">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=PRINCE+AVI+MD+4V" alt="">
 </p>
 <p align="center">
 <a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-AVI-red.svg?style=for-the-badge&logo=github"></a>
