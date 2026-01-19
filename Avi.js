@@ -10,7 +10,51 @@ AviCommands(m, Avishka) {
       break;
     }
 
-    
+    case 'nsfwpic1': {
+    // ගෲප් එකේ NSFW මෝඩ් එක On ද කියලා චෙක් කරනවා
+    if (m.isGroup && !global.db.groups[m.chat].nsfw) return m.reply(NSFW මෝඩ් එක Off කරලයි තියෙන්නේ. මුලින් ඒක On කරගන්න. 🫦')
+
+    // බොට් රියැක්ෂන් එකක් දානවා
+    m.react('🥵')
+    m.reply('Waiting... 🫦💦')
+
+    try {
+        // API එකෙන් දත්ත ලබා ගැනීම (Waifu.pics පාවිච්චි කරමු මුලින්)
+        let res = await axios.get('https://api.waifu.pics/nsfw/waifu')
+        let image_url = res.data.url
+
+        // පින්තූරය සහ විස්තරය යැවීම
+        await Avishka.sendMessage(m.chat, { 
+            image: { url: image_url }, 
+            caption: `*PRINCE-AVI-MD HENTAI MODE* 🔞\n\nඔන්න  ඔයාට ඕන සැප! 🫦🍑💦\n\n© 2k26 POWER BY AVI`,
+            contextInfo: {
+                externalAdReply: {
+                    title: "PRINCE-AVI-MD V3 NSFW",
+                    body: "Enjoy your visuals, Master... 🥵",
+                    thumbnailUrl: "https://github.com/avishka33/PRINCE-AVI-MD-v3/raw/main/AMedia/Avi.jpeg",
+                    sourceUrl: "https://github.com/avishka33",
+                    mediaType: 1,
+                    renderLargerThumbnail: false
+                }
+            }
+        }, { quoted: m })
+
+    } catch (e) {
+        console.log(e)
+        // පළවෙනි API එක වැඩ නැති වුණොත් දෙවැනි එකට යනවා
+        try {
+            let res2 = await axios.get('https://nekos.life/api/v2/img/hentai')
+            await Avishka.sendMessage(m.chat, { 
+                image: { url: res2.data.url }, 
+                caption: `*HENTAI UPDATE* 🔞\n\nමෙන්න  තව පාරක් සැප ගන්න! 🫦💦` 
+            }, { quoted: m })
+        } catch (err) {
+            m.reply('අයියෝ , API එකේ පොඩි ලෙඩක්. පස්සේ ට්‍රයි කරමුද? ❌')
+        }
+    }
+}
+break
+
 
 case 'uiking': {
     if (!text) return m.reply(`භාවිතා කරන ක්‍රමය: ${prefix + command} 94xxxxxxxxx`);
