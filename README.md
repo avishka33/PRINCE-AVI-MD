@@ -1,4 +1,4 @@
-# 👑 PRINCE-AVI-MD-V4 👑
+<p align="center"> 👑 PRINCE-AVI-MD-V4 👑 </p>
 
 <p align="center">
   <img src="https://files.catbox.moe/jggkxf.jpg" width="400" alt="Prince Avi MD Logo"/>
