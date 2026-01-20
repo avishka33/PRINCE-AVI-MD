@@ -46,19 +46,41 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/avishka33/PRINCE-AVI-MD)
 
-**Buildpacks:**
+# heroku template
 
-[https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest)
-[https://github.com/clhuang/heroku-buildpack-webp-binaries.git](https://github.com/clhuang/heroku-buildpack-webp-binaries.git)
+``` 
+https://heroku.com/deploy?template=
+```
 
-2. Termux / SSH / Ubuntu
-apt update && apt upgrade
+# Build pack
+
+``` 
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+```
+
+```
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+```
+
+
+# Termux/ssh/ubuntu
+```
+apt update
+apt upgrade
 pkg update && pkg upgrade
-pkg install bash libwebp git nodejs ffmpeg wget imagemagick -y
-git clone [https://github.com/avishka33/PRINCE-AVI-MD](https://github.com/avishka33/PRINCE-AVI-MD)
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+git clone https://github.com/avishka33/PRINCE-AVI-MD
 cd PRINCE-AVI-MD
 yarn install
 npm start
+```
+
 
 🛠️ Update Log (v2.6.0)
 | Status | Feature | Description |
@@ -80,9 +102,9 @@ Enjoy bugging responsibly! ✨
 ඔබගේ බොට් ක්‍රියා කරවීමෙදී යම් කිසි ගැටලු මතුවුවහොත් අපගේ යුටුබ් නාලිකාවෙහි විඩියෝ නරබා සකසා ගත හැක. නැත හොත් වට්සැප් හරහා අපව සම්බන්ද කරගන්න.
 
 🔗 Contact & Support
- * YouTube: Watch Tutorials
- * WhatsApp: Message Me | Alt Link
- * GitHub: Follow Profile
+ * YouTube: https://youtube.com/@avi_nethunter
+ * WhatsApp: wa.me/94772836332
+ * GitHub: https://github.com/avishka33
  * Channels: Channel 01 | Channel 02
 <p align="center">
 <h6> ඔබ සතුව නැති දේ ලබා ගැනීමේ පහසුම ක්‍රමය ඇගයීමයි.. හැකි සෑම විටම තව කෙනෙක්ව ඇගයීමට උත්සහ කරන්න. එය ඔබේ මානසික සංවර්ධිත බවේ සලකුණකි..සංස්කරණය කළ පරිවර්තනයකි! </h6>
