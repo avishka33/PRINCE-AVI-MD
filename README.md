@@ -80,7 +80,7 @@ cd PRINCE-AVI-MD
 yarn install
 npm start
 ```
-
+Auto reaction feature has been included.
 
 🛠️ Update Log (v2.6.0)
 | Status | Feature | Description |
