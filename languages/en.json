@@ -1,0 +1,9 @@
+{
+  "main_menu": "--- PRINCE-AVI-MD MENU ---",
+  "wait": "Processing your request... Please wait. ⏳",
+  "owner": "This feature is only for the Owner! ❌",
+  "admin": "This feature is only for Group Admins! ❌",
+  "group": "This command can only be used in groups! ❌",
+  "done": "Done successfully! ✅",
+  "lang_done": "Language has been updated to English! ✅"
+}
