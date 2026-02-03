@@ -103,15 +103,15 @@ Enjoy bugging responsibly! ✨
 
 ###Bug Command 
 
-*Avi-ui 
+* Avi-ui 
 
-*Avi-inbox
+* Avi-inbox
 
-*Avi-inbox2
+* Avi-inbox2
 
-*Avi-gc
+* Avi-gc
 
-*Avi-gc2
+* Avi-gc2
 
 🔗 Contact & Support
  * YouTube: https://youtube.com/@avi_nethunter
